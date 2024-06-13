@@ -104,7 +104,7 @@ def plot_graphs(data_filt):
 def main():
     usr_input_start, usr_input_end = get_usr_date_range()
     for vsl_name in ["Athenia", "Metis"]:
-        filename = vsl_name+" CCTV.csv"
+        filename = vsl_name+".csv"
         df_raw = pd.read_csv(filename)
         data = df_raw[["Body"]].copy()
         # Apply the function to extract information
